@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Block Game</title>
+
+  <link rel="stylesheet" href="style.css?v=1000000">
+</head>
+
+<body>
+
+  <div id="game-container">
+
+    <div id="top-info">
+      <div id="high-score">En Yüksek Skor: 0</div>
+      <div id="score">0</div>
+    </div>
+
+    <div id="board"></div>
+
+    <div id="pieces"></div>
+
+    <div id="powerups">
+      <button id="pu-clear-row">Satır Sil (1)</button>
+      <button id="pu-reroll">Parça Yenile (1)</button>
+      <button id="pu-undo">Geri Al (1)</button>
+      <button id="btn-reset" class="reset-btn">↺ RESET</button>
+    </div>
+
+  </div>
+
+  <!-- SESLER -->
+  <audio id="snd-place" src="sounds/place.mp3" preload="auto"></audio>
+  <audio id="snd-clear" src="sounds/clear.mp3" preload="auto"></audio>
+  <audio id="snd-combo" src="sounds/combo.mp3" preload="auto"></audio>
+  <audio id="snd-gameover" src="sounds/gameover.mp3" preload="auto"></audio>
+
+  <script src="main.js?v=1000000"></script>
+</body>
+</html>
